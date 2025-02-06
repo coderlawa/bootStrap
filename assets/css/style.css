@@ -14,6 +14,7 @@ body{
     background-color: #a4c2d1;
 }
 
+/* Header */
 #hero{
     background-image: url('../images/background.webp');
     background-size: cover;
@@ -29,7 +30,7 @@ h2{
     color: #184f63;
 }
 
-/* About Sectin */
+/* About Section */
 
 #about{
     background-color: white;
@@ -41,8 +42,32 @@ h2{
     background-color: #dbdcde;
 }
 
+#portfolio .card-title{
+    color: #1f7798;
+    font-size: 1.2rem;
+}
+
+#portfolio .btn-outline-secondary:hover {
+    background-color: #1f7798;
+    color: white;
+}
+
+#portfolio .card-text{
+    min-height: 120px;
+}
+
 /* Contact */
 
 #contact{
     background-color: white;
+}
+
+/* Media queries */
+
+/* Use Bootstrap breakpoint for XL screens */
+@media screen and (min-width: 1200px){
+   /* Fixes all portfolio cards being too tall on xl screens */
+   #portfolio .card-text{
+       min-height: auto;
+   }
 }
